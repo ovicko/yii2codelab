@@ -33,6 +33,7 @@ class JobController extends ActiveController
                     },
                 ],
                 \yii\filters\auth\QueryParamAuth::class,
+                \yii\filters\auth\HttpBearerAuth::class
             ],
         ];
         return $behaviors;
